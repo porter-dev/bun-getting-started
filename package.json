@@ -1,15 +1,17 @@
 {
   "name": "bun-getting-started",
+  "private": true,
   "module": "index.ts",
   "type": "module",
   "scripts": {
+    "start": "bun run index.ts",
     "dev": "bun run --watch index.ts",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit",
     "build": "bun build index.ts --target bun --compile --outfile app"
   },
   "devDependencies": {
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
+    "@types/bun": "1.4.3",
+    "typescript": "7.0.2"
   }
 }
